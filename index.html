@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<title>Cadê Doutor</title>
+<style type="text/css">
+      table
+      {
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+        width:100%;
+        border-collapse:collapse;
+      }
+      table td, th
+      {
+        border:1px solid #2424FF;
+        padding:3px 7px 2px 7px;
+      }
+      table th
+      {
+        font-size:1.2em;
+        text-align:left;
+        padding-top:5px;
+        padding-bottom:4px;
+        background-color:#2E82FF;
+        color:#fff;
+      }
+      table tr.alt td
+      {
+        color:#000;
+        background-color:#D6EDFF;
+      }
+      button{
+        height:30px;
+      }
+
+      .but {
+display: inline-block;
+background-color: #ccc;
+color: #444;
+padding: 10px 20px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+border: 0px;
+}
+    </style>
+</head>
+<body>
+<h1>CadêDoutor</h1>
+<input type="button" value="Atualizar..." onClick="alerta()" class="but">
+<br />
+<br />
+<br />
+
+<script type="text/javascript" src="cordova.js"></script>
+
+<table>
+        <tr>
+          <th>Médico</th>
+          <th>Especialidade</th>
+          <th>Telefone</th>
+        </tr>
+        <tr>
+          <td>Dr. Cadete</td>
+          <td>Radiologia</td>
+          <td>(77)0123-4567</td>
+        </tr>
+        <tr class="alt">
+          <td>Dr. Phillip Glass</td>
+          <td>Neurologia</td>
+          <td>(77)9876-5432</td>
+        </tr>
+        <tr>
+          <td>Dr. José Ernesto</td>
+          <td>Clínica Médica</td>
+          <td>(77) 1357-2468</td>
+        </tr>
+    </table>
+
+
+<script type="text/javascript">
+
+            function alerta() {
+                navigator.notification.alert(
+                    'Não há versões para serem atualizadas.',
+                    function(){},
+                    'Informação',
+                    'Fechar'
+                );
+            }
+
+</script>
+</body>
+</html>
